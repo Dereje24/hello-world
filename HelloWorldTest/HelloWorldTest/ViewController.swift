@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var textField: UITextField!
-
+    @IBOutlet var lavelText: UILabel!
+    
     @IBAction func clickedButton(sender: AnyObject) {
-        
+        lavelText.text = textField.text
     }
     
     override func viewDidLoad() {

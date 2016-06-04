@@ -23,17 +23,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="95" width="246" height="21"/>
+                                    <rect key="frame" x="69" y="95" width="246" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lZ-tp-uY6">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="151" y="186" width="97" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mG-sD-Skv">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -44,24 +36,33 @@
                                     <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZQ-1E-OVe"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lZ-tp-uY6">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="190" width="97" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="KST-tJ-laQ"/>
-                                <exclude reference="9lZ-tp-uY6"/>
                                 <exclude reference="6mG-sD-Skv"/>
+                                <exclude reference="9lZ-tp-uY6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="KST-tJ-laQ"/>
-                                <include reference="9lZ-tp-uY6"/>
                                 <include reference="6mG-sD-Skv"/>
+                                <include reference="9lZ-tp-uY6"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="lavelText" destination="KST-tJ-laQ" id="eUX-1X-mUZ"/>
                         <outlet property="textField" destination="9lZ-tp-uY6" id="9pD-8Z-ate"/>
                         <outlet property="textView" destination="9lZ-tp-uY6" id="c0e-Fl-quO"/>
                     </connections>
