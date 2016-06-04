@@ -61,6 +61,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="9lZ-tp-uY6" id="9pD-8Z-ate"/>
+                        <outlet property="textView" destination="9lZ-tp-uY6" id="c0e-Fl-quO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

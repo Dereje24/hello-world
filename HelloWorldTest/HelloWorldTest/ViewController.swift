@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textField: UITextField!
+
     @IBAction func clickedButton(sender: AnyObject) {
         
     }
