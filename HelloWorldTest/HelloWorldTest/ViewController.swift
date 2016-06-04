@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var lavelText: UILabel!
     
     @IBAction func clickedButton(sender: AnyObject) {
-        lavelText.text = textField.text
+        //lavelText.text = textField.text
+        lavelText.text = "Hello California!!"
     }
     
     override func viewDidLoad() {
